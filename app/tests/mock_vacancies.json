@@ -1,0 +1,202 @@
+[
+    {
+      "title": "Golang разработчик (junior)",
+      "company": "Softweather",
+      "area": "Москва",
+      "experience": "От 1 года до 3 лет",
+      "schedule": "Удаленная работа",
+      "url": "https://hh.ru/vacancy/101735794",
+      "salary_from": null,
+      "salary_to": null
+    },
+    {
+      "title": "Golang Developer/Middle Go",
+      "company": "Концепт-Технологии",
+      "area": "Москва",
+      "experience": "От 3 до 6 лет",
+      "schedule": "Полный день",
+      "url": "https://hh.ru/vacancy/101429153",
+      "salary_from": 125000,
+      "salary_to": 280000
+    },
+    {
+      "title": "Golang developer (junior)",
+      "company": "Lamoda Tech",
+      "area": "Москва",
+      "experience": "Нет опыта",
+      "schedule": "Полный день",
+      "url": "https://hh.ru/vacancy/102380046",
+      "salary_from": null,
+      "salary_to": null
+    },
+    {
+      "title": "Backend разработчик - Python (FastAPI) / Golang",
+      "company": "Другойкод",
+      "area": "Михайловск (Ставропольский край)",
+      "experience": "От 1 года до 3 лет",
+      "schedule": "Полный день",
+      "url": "https://hh.ru/vacancy/102943470",
+      "salary_from": 110000,
+      "salary_to": null
+    },
+    {
+      "title": "Junior Backend Developer (Golang)",
+      "company": "Vortex",
+      "area": "Москва",
+      "experience": "От 1 года до 3 лет",
+      "schedule": "Удаленная работа",
+      "url": "https://hh.ru/vacancy/102095842",
+      "salary_from": 90000,
+      "salary_to": 130000
+    },
+    {
+      "title": "Golang Developer (Junior)",
+      "company": "Smartway",
+      "area": "Пенза",
+      "experience": "От 1 года до 3 лет",
+      "schedule": "Полный день",
+      "url": "https://hh.ru/vacancy/102611724",
+      "salary_from": null,
+      "salary_to": null
+    },
+    {
+      "title": "Junior Golang-разработчик",
+      "company": "СимбирСофт",
+      "area": "Ульяновск",
+      "experience": "От 1 года до 3 лет",
+      "schedule": "Удаленная работа",
+      "url": "https://hh.ru/vacancy/101495316",
+      "salary_from": null,
+      "salary_to": null
+    },
+    {
+      "title": "PHP / GoLang разработчик",
+      "company": "Открытый контакт",
+      "area": "Минск",
+      "experience": "От 3 до 6 лет",
+      "schedule": "Полный день",
+      "url": "https://hh.ru/vacancy/101581405",
+      "salary_from": null,
+      "salary_to": null
+    },
+    {
+      "title": "Junior Golang( GO ) разработчик Backend",
+      "company": "Ди-Ай-Вай Сервис",
+      "area": "Москва",
+      "experience": "Нет опыта",
+      "schedule": "Удаленная работа",
+      "url": "https://hh.ru/vacancy/102750495",
+      "salary_from": null,
+      "salary_to": null
+    },
+    {
+      "title": "Golang разработчик",
+      "company": "Зерокодер",
+      "area": "Саратов",
+      "experience": "От 1 года до 3 лет",
+      "schedule": "Удаленная работа",
+      "url": "https://hh.ru/vacancy/102839844",
+      "salary_from": 100000,
+      "salary_to": null
+    },
+    {
+      "title": "Golang Developer",
+      "company": "Бюро кредитных историй Скоринг Бюро",
+      "area": "Москва",
+      "experience": "От 1 года до 3 лет",
+      "schedule": "Полный день",
+      "url": "https://hh.ru/vacancy/101747599",
+      "salary_from": null,
+      "salary_to": null
+    },
+    {
+      "title": "Младший разработчик Golang / Junior developer Golang",
+      "company": "NTech",
+      "area": "Королев",
+      "experience": "Нет опыта",
+      "schedule": "Полный день",
+      "url": "https://hh.ru/vacancy/101514712",
+      "salary_from": 70000,
+      "salary_to": null
+    },
+    {
+      "title": "Golang developer",
+      "company": "SberTech",
+      "area": "Самара",
+      "experience": "От 1 года до 3 лет",
+      "schedule": "Полный день",
+      "url": "https://hh.ru/vacancy/102827148",
+      "salary_from": null,
+      "salary_to": null
+    },
+    {
+      "title": "Backend разработчик - Python (FastAPI) / Golang",
+      "company": "Другойкод",
+      "area": "Ставрополь",
+      "experience": "От 1 года до 3 лет",
+      "schedule": "Полный день",
+      "url": "https://hh.ru/vacancy/102943469",
+      "salary_from": 110000,
+      "salary_to": null
+    },
+    {
+      "title": "Golang Developer Junior",
+      "company": "Кадровое агентство BWG",
+      "area": "Москва",
+      "experience": "Нет опыта",
+      "schedule": "Полный день",
+      "url": "https://hh.ru/vacancy/101504271",
+      "salary_from": 100000,
+      "salary_to": 150000
+    },
+    {
+      "title": "Golang разработчик",
+      "company": "Freedom Technologies",
+      "area": "Алматы",
+      "experience": "От 3 до 6 лет",
+      "schedule": "Полный день",
+      "url": "https://hh.ru/vacancy/102844236",
+      "salary_from": null,
+      "salary_to": null
+    },
+    {
+      "title": "Junior golang-разработчик",
+      "company": "СимбирСофт",
+      "area": "Саранск",
+      "experience": "Нет опыта",
+      "schedule": "Полный день",
+      "url": "https://hh.ru/vacancy/101449699",
+      "salary_from": null,
+      "salary_to": null
+    },
+    {
+      "title": "Стажёр-разработчик Golang, Ozon Fintech, Рассрочка",
+      "company": "Ozon",
+      "area": "Москва",
+      "experience": "Нет опыта",
+      "schedule": "Полный день",
+      "url": "https://hh.ru/vacancy/102925694",
+      "salary_from": null,
+      "salary_to": null
+    },
+    {
+      "title": "Стажёр-разработчик Golang, направление разработки банковских продуктов",
+      "company": "Ozon",
+      "area": "Москва",
+      "experience": "Нет опыта",
+      "schedule": "Полный день",
+      "url": "https://hh.ru/vacancy/102788860",
+      "salary_from": null,
+      "salary_to": null
+    },
+    {
+      "title": "Python/Golang разработчик",
+      "company": "Геомирагро",
+      "area": "Москва",
+      "experience": "От 1 года до 3 лет",
+      "schedule": "Удаленная работа",
+      "url": "https://hh.ru/vacancy/102441151",
+      "salary_from": null,
+      "salary_to": null
+    }
+  ]

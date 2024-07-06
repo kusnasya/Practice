@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DB Vacancy Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .search-container {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <h2>Поиск вакансий в базе данных</h2>
+        <form id="db-search-form">
+            <label for="keyword"><b>Название вакансии:</b></label>
+            <input type="text" id="keyword" name="keyword"><br><br>
+
+            <label><b>Локация:</b></label><br>
+            <input type="checkbox" id="moscow" name="area" value="Москва">
+            <label for="moscow">Москва</label><br>
+            <input type="checkbox" id="spb" name="area" value="Санкт-Петербург">
+            <label for="spb">Санкт-Петербург</label><br><br>
+
+            <label><b>Опыт:</b></label><br>
+            <input type="checkbox" id="no_exp" name="experience" value="Нет опыта">
+            <label for="no_exp">Нет опыта</label><br>
+            <input type="checkbox" id="exp_1_3" name="experience" value="От 1 года до 3 лет">
+            <label for="exp_1_3">От 1 года до 3 лет</label><br>
+            <input type="checkbox" id="exp_3_6" name="experience" value="От 3 до 6 лет">
+            <label for="exp_3_6">От 3 до 6 лет</label><br>
+            <input type="checkbox" id="exp_more_6" name="experience" value="Более 6 лет">
+            <label for="exp_more_6">Более 6 лет</label><br><br>
+
+            <label><b>Формат работы:</b></label><br>
+            <input type="checkbox" id="full_day" name="schedule" value="Полный день">
+            <label for="full_day">Полный день</label><br>
+            <input type="checkbox" id="shift" name="schedule" value="Сменный график">
+            <label for="shift">Сменный график</label><br>
+            <input type="checkbox" id="flexible" name="schedule" value="Гибкий график">
+            <label for="flexible">Гибкий график</label><br>
+            <input type="checkbox" id="remote" name="schedule" value="Удаленная работа">
+            <label for="remote">Удаленная работа</label><br>
+            <input type="checkbox" id="fly_in_fly_out" name="schedule" value="Вахтовый метод">
+            <label for="fly_in_fly_out">Вахтовый метод</label><br><br>
+
+            <button type="submit">Поиск</button>
+        </form>
+    </div>
+
+    <div id="vacancy-results">
+        <!-- Vacancy results will be displayed here -->
+    </div>
+
+    <script>
+        document.getElementById('db-search-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+
+            const params = new URLSearchParams();
+            formData.forEach((value, key) => {
+                params.append(key, value);
+            });
+
+            fetch('/vacancies/db-search?' + params.toString())
+                .then(response => response.json())
+                .then(data => {
+                    const vacancies = data;
+                    const table = document.createElement('table');
+                    const headerRow = table.createTHead().insertRow();
+                    ['Вакансия', 'Компания', 'Локация', 'Опыт', 'Формат работы', 'ЗП от (₽)', 'ЗП до (₽)', 'URL'].forEach(title => {
+                        const th = document.createElement('th');
+                        th.textContent = title;
+                        headerRow.appendChild(th);
+                    });
+
+                    vacancies.forEach(vacancy => {
+                        const row = table.insertRow();
+                        ['title', 'company', 'area', 'experience', 'schedule', 'salary_from', 'salary_to', 'url'].forEach(key => {
+                            const cell = row.insertCell();
+                            cell.textContent = vacancy[key];
+                        });
+                    });
+
+                    const resultsDiv = document.getElementById('vacancy-results');
+                    resultsDiv.innerHTML = '';
+                    resultsDiv.appendChild(table);
+                })
+                .catch(error => console.error('Error fetching vacancies:', error));
+        });
+    </script>
+
+    <a href="/">Перейти на главную страницу</a>
+</body>
+</html>
